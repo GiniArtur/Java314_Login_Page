@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Главная страница</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: #00668b;
+            color: white;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            text-align: left; /* Выравнивание по левому краю */
+            margin-top: 50px;
+            width: 1200px; /* Увеличение ширины контейнера */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container h1 {
+            text-align: center; /* Выравнивание по левому краю */
+            font-size: 28px;
+            margin-bottom: 30px;
+            margin-top: 100px;
+        }
+
+        .form-group {
+
+            margin: 10px 0;
+            width: 100%; /* Поле ввода будет растягиваться на всю ширину контейнера */
+        }
+
+        .form-group label {
+            width: 100%; /* Поле ввода будет растягиваться на всю ширину контейнера */
+            display: inline-block; /* Метки будут слева от полей */
+
+            font-size: 16px;
+        }
+
+        .form-group input {
+            padding: 10px 20px;
+            width: 100%; /* Поле ввода будет растягиваться на всю ширину контейнера */
+            font-size: 16px;
+            margin-top: 5px;
+            border-radius: 8px; /* Закругленные углы для полей ввода */
+            border: 1px solid #ccc; /* Легкая серая рамка */
+        }
+
+        button {
+            padding: 10px 20px;
+            width: 100%; /* Поле ввода будет растягиваться на всю ширину контейнера */
+            font-size: 16px;
+            margin-top: 20px;
+            border-radius: 8px; /* Закругленные углы для полей ввода */
+            border: 1px solid #ccc; /* Легкая серая рамка */
+            background-color: #00728b;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .links {
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: center; /* Выравнивание по левому краю */
+        }
+
+        .links a {
+            color: #007bff;
+            text-decoration: none;
+
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px 30px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            background-color: #00668b;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div>ГЛАВНАЯ</div>
+    <nav>
+        <a href="#">АДМИНИСТРАТОР</a>
+        <a href="#">ВРАЧ</a>
+        <a href="#">НАЗНАЧЕНИЕ</a>
+        <a href="#">ПАЦИЕНТ</a>
+    </nav>
+</header>
+<div class="container">
+    <h1>Авторизация пользователя</h1>
+    <form>
+        <div class="form-group">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Введите email">
+        </div>
+        <div class="form-group">
+            <label for="password">Пароль:</label><br>
+            <input type="password" id="password" name="password" placeholder="Введите пароль">
+        </div>
+        <button type="submit">Авторизация</button>
+    </form>
+    <div class="links">
+        У вас нет аккаунта? <a href="#">Создать аккаунт?</a>
+    </div>
+</div>
+<footer>
+    COPYRIGHT - 2024
+</footer>
+</body>
+</html>
